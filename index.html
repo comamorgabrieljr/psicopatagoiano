@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jogo de Adivinhação</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="top-bar">
+    <div class="container">
+      <h2>Jogo de Adivinhação</h2>
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="inicio">
+    <h1>🎯 Jogo de Adivinhação</h1>
+    <p class="game-info">Tente adivinhar o número entre 1 e 100</p>
+  </header>
+
+  <main>
+    <div class="game-container">
+      <div class="guess-input">
+        <input type="number" id="guess-input" min="1" max="100" placeholder="Digite seu palpite" />
+        <button id="guess-btn">Enviar</button>
+      </div>
+      <div class="feedback" id="feedback">
+        Vamos começar! Digite seu primeiro palpite.
+      </div>
+      <div class="attempts" id="attempts">Tentativas restantes: 10</div>
+      <div class="attempt-history">
+        <h3>Histórico de Tentativas</h3>
+        <ul class="attempt-list" id="attempt-list"></ul>
+      </div>
+      <button id="restart-btn">Jogar Novamente</button>
+    </div>
+  </main>
+
+  <section id="sobre" class="section-container">
+    <h2>Sobre o Jogo</h2>
+    <p>
+      Este jogo foi desenvolvido com o intuito de trazer a felicidade e tocar os corações de quem joga meus jogos. Fico muito grato por ter se divertido com meu jogo!
+    </p>
+  </section>
+
+  <section id="contato" class="section-container">
+    <h2>Foto da Equipe</h2>
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY07WP43PbBGUn8_0Bb3pFJJAjK4NbrB18Nw&s" 
+           alt="Foto da equipe 1" 
+           class="clickable-img"
+           onclick="expandImage(this, 'Este é o nosso líder de projeto.')" />
+      
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNlxw0Tt6ng2AyrW_UDoWOPHNn3RpULOr4uw&s" 
+           alt="Foto da equipe 2" 
+           class="clickable-img"
+           onclick="expandImage(this, 'Nosso desenvolvedor principal.')" />
+      
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqJbQWzmgkP5pCCxaYoibNCIb31tpkRBEEzQ&s" 
+           alt="Foto da equipe 3" 
+           class="clickable-img"
+           onclick="expandImage(this, 'Responsável pelo design e UX.')" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJDn0kECC3c7JkuDBl1QUVpkUCwfzEsx3AGw&s" 
+           alt="Foto da equipe 3" 
+           class="clickable-img"
+           onclick="expandImage(this, 'Psicopata Goiano.')" />
+    </div>
+
+    <footer style="margin-top: 20px; text-align: center;">
+      Pátria Amada Brasil.
+    </footer>
+  </section>
+
+  <!-- Modal de imagem -->
+  <div id="imgModal" class="modal" onclick="closeModal()">
+    <div class="modal-content">
+      <img id="modalImage" />
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
