@@ -1,6 +1,6 @@
 /* Barra superior */
 .top-bar {
-  background-color: #0a4208;
+  background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 60%, rgba(255, 0, 0, 1) 100%);
   color: white;
   width: 100%;
   padding: 10px 0;
@@ -40,7 +40,7 @@
 }
 
 .top-bar .nav-links li a:hover {
-  color: #085008;
+  color: #500808;
 }
 
 /* Scroll suave */
@@ -54,7 +54,7 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
-  background: url(https://s2-oglobo.glbimg.com/EiOmL2Grma3yszE_SyXoWtm8Bdg=/0x0:1000x745/888x0/smart/filters:strip_icc/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2024/5/p/DOAPniTBOCM2q3R2qU2Q/flamengo-corinthians.jpg) no-repeat center center fixed;
+  background: url(images_waifu2x_art_noise3_scale.png) no-repeat center center fixed;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -111,7 +111,7 @@ input[type='number'] {
 
 button {
   padding: 12px 20px;
-  background-color: #2a8622;
+  background-color: #862222;
   color: white;
   border: none;
   border-radius: 8px;
@@ -121,17 +121,17 @@ button {
 }
 
 button:hover {
-  background-color: #6dd86d;
+  background-color: #d86d6d;
 }
 
 #restart-btn {
-  background-color: #11e23e;
+  background-color: #e21111;
   display: none;
   margin: 0 auto;
 }
 
 #restart-btn:hover {
-  background-color: #085008;
+  background-color: #500808;
 }
 
 .feedback {
@@ -157,7 +157,7 @@ button:hover {
 
 .attempt-history h3 {
   margin-bottom: 10px;
-  color: #085008;
+  color: #560eff;
 }
 
 .attempt-list {
@@ -195,7 +195,7 @@ footer {
 
 .section-container h2 {
   margin-bottom: 15px;
-  color: #085008;
+  color: #500808;
   font-size: 2rem;
   text-align: center;
 }
